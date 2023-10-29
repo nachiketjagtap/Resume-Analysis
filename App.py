@@ -4,7 +4,7 @@ import base64,random
 import time,datetime
 import nltk
 nltk.download('stopwords')
-
+import os
 from pyresparser import ResumeParser
 from pdfminer3.layout import LAParams, LTTextBox
 from pdfminer3.pdfpage import PDFPage
@@ -19,6 +19,8 @@ import pymysql
 import pafy
 import plotly.express as px
 import spacy
+os.environ["PAFY_BACKEND"] = "internal"
+import pafy
 
 
 
